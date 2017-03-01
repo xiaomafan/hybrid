@@ -61,3 +61,6 @@ google-services.json
 freeline.py
 freeline/
 freeline_project_description.json
+app/libs/
+commoninfo/libs/
+commoninfo/src/main/res/drawable/
