@@ -1,1 +1,1 @@
-include ':app', ':commoninfo'
+include ':app', ':hybrid'

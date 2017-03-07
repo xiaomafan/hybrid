@@ -62,5 +62,9 @@ freeline.py
 freeline/
 freeline_project_description.json
 app/libs/
-commoninfo/libs/
-commoninfo/src/main/res/drawable/
+hybrid/build
+hybrid/local.properties
+.idea/modules.xml
+
+hybrid/libs/
+hybrid/src/main/res/drawable/

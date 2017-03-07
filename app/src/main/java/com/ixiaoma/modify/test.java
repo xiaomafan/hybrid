@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.ixiaoma.utils.LogHelper;
+import com.ixiaoma.hybrid.LogHelper;
 import com.ixiaoma.modify.testfactory.ConcrateProductA;
 import com.ixiaoma.modify.testfactory.ConcreteFactory;
 import com.ixiaoma.modify.testfactory.FactoryA;
@@ -28,16 +28,24 @@ public class test extends Activity {
         mBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ConcreteFactory factory = new ConcreteFactory();
-                Product product = factory.createProduct();
-                product.method();
-
-                FactoryA factoryA = new FactoryA();
-                ConcrateProductA productA = factoryA.concreteProduct(ConcrateProductA.class);
-                productA.method();
-                LogHelper.e("小马二号","谢谢大家");
+                testLibrary();
             }
         });
+    }
+    
+    private void testLibrary(){
+        LogHelper.e("xiaoma","引用library");
+    }
+    
+    private void testFactory(){
+        ConcreteFactory factory = new ConcreteFactory();
+        Product product = factory.createProduct();
+        product.method();
+
+        FactoryA factoryA = new FactoryA();
+        ConcrateProductA productA = factoryA.concreteProduct(ConcrateProductA.class);
+        productA.method();
+
     }
 
 }
