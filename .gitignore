@@ -62,7 +62,6 @@ freeline.py
 freeline/
 freeline_project_description.json
 app/libs/
-hybrid/build
 hybrid/local.properties
 .idea/modules.xml
 
