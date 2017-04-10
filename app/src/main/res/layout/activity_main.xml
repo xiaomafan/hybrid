@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xiaoma="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.ixiaoma.modify.PagerSlidingTabStrip
+<!--    <com.ixiaoma.modify.PagerSlidingTabStrip
         android:id="@+id/pts_head"
         android:background="#FFF"
         android:layout_width="match_parent"
@@ -16,11 +16,21 @@
         xiaoma:pstsIndicatorColor="#FF4545"
         xiaoma:pstsIndicatorHeight="8dp"
         xiaoma:pstsSelectedTabTextColor="#FF4545"
-        android:layout_height="54dp" />
-   <!-- <View
+        android:layout_height="54dp" />-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
         android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:background="#F2F2F1"/>-->
+        android:layout_height="48dp"
+        app:tabIndicatorColor="#FF4545"
+        app:tabSelectedTextColor="#FF4545"
+        app:tabTextColor="#4A4A4A"
+        app:tabMode="fixed"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#F2F2F1"/>
+    
 
     <android.support.v4.view.ViewPager
         android:id="@+id/vp_view"

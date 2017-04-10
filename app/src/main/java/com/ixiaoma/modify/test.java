@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.ixiaoma.hybrid.LogHelper;
 import com.ixiaoma.modify.testfactory.ConcrateProductA;
 import com.ixiaoma.modify.testfactory.ConcreteFactory;
 import com.ixiaoma.modify.testfactory.FactoryA;
@@ -34,7 +33,7 @@ public class test extends Activity {
     }
     
     private void testLibrary(){
-        LogHelper.e("xiaoma","引用library");
+//        LogHelper.e("xiaoma","引用library");
     }
     
     private void testFactory(){
